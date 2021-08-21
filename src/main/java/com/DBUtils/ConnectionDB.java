@@ -11,9 +11,9 @@ public class ConnectionDB {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             String url = "jdbc:mysql://localhost:3306/";
-            String nameDTB = "midni770_projectweb";
-            String userName = "projectweb";
-            String pass = "123";
+            String nameDTB = "projectweb";
+            String userName = "root";
+            String pass = "";
             cn = DriverManager.getConnection(url + nameDTB, userName, pass);
         }catch (Exception e){
             Logger.getLogger(ConnectionDB.class.getName()).log(Level.SEVERE, null, e);
